@@ -71,15 +71,15 @@ function draw() {
       jewelryG.destroyEach();
 
       // treasureCollection=+ 150;
-       treasureCollection= 150;
-
-       //no jogo nenhum dos dois fez diferença quando joguei
+      
+      treasureCollection = treasureCollection + 150;
       
     }else{
       if(swordGroup.isTouching(boy)) {
         gameState=END;
         
-         boy.addAnimation(endImg);
+         boy.addAnimation("gameover",endImg);
+         boy.changeAnimation("gameover");
 
         boy.x=200;
         boy.y=300;
